@@ -10,7 +10,7 @@
 ## API
 
 ```html
-<* class="logo" data-logo="Myth">
+<* class="logo" data-logo="Metalsmith">
   <*></*>
 </*>
 ```
