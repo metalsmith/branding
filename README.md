@@ -1,5 +1,5 @@
 
-# metalsmith-branding
+# Metalsmith branding
 
 A branding set of SVG's, PNG's, and iconfont for metalsmith.  
 SVG's with a `-web` suffix have the `fill:currentColor`, so they can easily be changed by specifying `color` on a parent element.
