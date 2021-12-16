@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Metalsmith icons</title>
+    <link rel="stylesheet" href="metalsmith-icons.css">
+    <style>
+    html, body {
+      font-family: 'TimesNewRoman', 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      color: #333;
+    }
+    h1 {
+      position: fixed;
+      border-bottom: 1px solid #ccc;
+      box-shadow: 0 0 3px gray;
+      margin: 0;
+      padding: 1rem;
+      z-index: 1;
+      background: white;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    #icons {
+      margin-top: 75px; 
+    }
+    #icons > div {
+      float: left;
+      position: relative;
+      padding: .125rem;
+      border: 1px solid transparent;
+      border-radius: 5px;
+    }
+    #icons > div:hover {
+      float: left;
+      position: relative;
+      padding: .125rem;
+      z-index: 2;
+      border: 1px solid #daae20;
+      color: #daae20;
+    }
+    #icons > div:hover::after {
+      content: attr(data-title);
+      display: block;
+      position: absolute;
+      top: 100%; 
+      left: 0;
+      background: white;
+      box-shadow: 0 0 3px #daae20;
+      padding: .25rem .5rem;
+      z-index: 999;
+      font-family: sans-serif;
+      color: #333;
+    }
+    #search {
+      float: right;
+    }
+    i[class^="icon-"] {
+      font-size: 2em;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Metalsmith icons
+      <small>
+        <input type="search" id="search" placeholder="Search...">
+      </small>
+    </h1>
+    <div id="icons">
+      <div><i class="icon-cursor"></i></div>
+      <div><i class="icon-crosshair"></i></div>
+      <div><i class="icon-search"></i></div>
+      <div><i class="icon-zoomin"></i></div>
+      <div><i class="icon-zoomout"></i></div>
+      <div><i class="icon-view"></i></div>
+      <div><i class="icon-attach"></i></div>
+      <div><i class="icon-link"></i></div>
+      <div><i class="icon-unlink"></i></div>
+      <div><i class="icon-move"></i></div>
+      <div><i class="icon-write"></i></div>
+      <div><i class="icon-writingdisabled"></i></div>
+      <div><i class="icon-erase"></i></div>
+      <div><i class="icon-compose"></i></div>
+      <div><i class="icon-lock"></i></div>
+      <div><i class="icon-unlock"></i></div>
+      <div><i class="icon-key"></i></div>
+      <div><i class="icon-backspace"></i></div>
+      <div><i class="icon-ban"></i></div>
+      <div><i class="icon-smoking"></i></div>
+      <div><i class="icon-nosmoking"></i></div>
+      <div><i class="icon-trash"></i></div>
+      <div><i class="icon-target"></i></div>
+      <div><i class="icon-tag"></i></div>
+      <div><i class="icon-bookmark"></i></div>
+      <div><i class="icon-flag"></i></div>
+      <div><i class="icon-like"></i></div>
+      <div><i class="icon-dislike"></i></div>
+      <div><i class="icon-heart"></i></div>
+      <div><i class="icon-star"></i></div>
+      <div><i class="icon-sample"></i></div>
+      <div><i class="icon-crop"></i></div>
+      <div><i class="icon-layers"></i></div>
+      <div><i class="icon-layergroup"></i></div>
+      <div><i class="icon-pen"></i></div>
+      <div><i class="icon-bezier"></i></div>
+      <div><i class="icon-pixels"></i></div>
+      <div><i class="icon-phone"></i></div>
+      <div><i class="icon-phonedisabled"></i></div>
+      <div><i class="icon-touchtonephone"></i></div>
+      <div><i class="icon-mail"></i></div>
+      <div><i class="icon-inbox"></i></div>
+      <div><i class="icon-outbox"></i></div>
+      <div><i class="icon-chat"></i></div>
+      <div><i class="icon-user"></i></div>
+      <div><i class="icon-users"></i></div>
+      <div><i class="icon-usergroup"></i></div>
+      <div><i class="icon-businessuser"></i></div>
+      <div><i class="icon-man"></i></div>
+      <div><i class="icon-male"></i></div>
+      <div><i class="icon-woman"></i></div>
+      <div><i class="icon-female"></i></div>
+      <div><i class="icon-raisedhand"></i></div>
+      <div><i class="icon-hand"></i></div>
+      <div><i class="icon-pointup"></i></div>
+      <div><i class="icon-pointdown"></i></div>
+      <div><i class="icon-pointdownleft"></i></div>
+      <div><i class="icon-pointleft"></i></div>
+      <div><i class="icon-pointupleft"></i></div>
+      <div><i class="icon-cart"></i></div>
+      <div><i class="icon-creditcard"></i></div>
+      <div><i class="icon-calculator"></i></div>
+      <div><i class="icon-barchart"></i></div>
+      <div><i class="icon-piechart"></i></div>
+      <div><i class="icon-box"></i></div>
+      <div><i class="icon-home"></i></div>
+      <div><i class="icon-globe"></i></div>
+      <div><i class="icon-navigate"></i></div>
+      <div><i class="icon-compass"></i></div>
+      <div><i class="icon-signpost"></i></div>
+      <div><i class="icon-location"></i></div>
+      <div><i class="icon-floppydisk"></i></div>
+      <div><i class="icon-database"></i></div>
+      <div><i class="icon-hdd"></i></div>
+      <div><i class="icon-microchip"></i></div>
+      <div><i class="icon-music"></i></div>
+      <div><i class="icon-headphones"></i></div>
+      <div><i class="icon-discdrive"></i></div>
+      <div><i class="icon-volume"></i></div>
+      <div><i class="icon-lowvolume"></i></div>
+      <div><i class="icon-mediumvolume"></i></div>
+      <div><i class="icon-highvolume"></i></div>
+      <div><i class="icon-airplay"></i></div>
+      <div><i class="icon-camera"></i></div>
+      <div><i class="icon-picture"></i></div>
+      <div><i class="icon-video"></i></div>
+      <div><i class="icon-webcam"></i></div>
+      <div><i class="icon-film"></i></div>
+      <div><i class="icon-playvideo"></i></div>
+      <div><i class="icon-videogame"></i></div>
+      <div><i class="icon-play"></i></div>
+      <div><i class="icon-pause"></i></div>
+      <div><i class="icon-stop"></i></div>
+      <div><i class="icon-record"></i></div>
+      <div><i class="icon-rewind"></i></div>
+      <div><i class="icon-fastforward"></i></div>
+      <div><i class="icon-skipback"></i></div>
+      <div><i class="icon-skipforward"></i></div>
+      <div><i class="icon-eject"></i></div>
+      <div><i class="icon-repeat"></i></div>
+      <div><i class="icon-replay"></i></div>
+      <div><i class="icon-shuffle"></i></div>
+      <div><i class="icon-index"></i></div>
+      <div><i class="icon-storagebox"></i></div>
+      <div><i class="icon-book"></i></div>
+      <div><i class="icon-notebook"></i></div>
+      <div><i class="icon-newspaper"></i></div>
+      <div><i class="icon-gridlines"></i></div>
+      <div><i class="icon-rows"></i></div>
+      <div><i class="icon-columns"></i></div>
+      <div><i class="icon-thumbnails"></i></div>
+      <div><i class="icon-mouse"></i></div>
+      <div><i class="icon-usb"></i></div>
+      <div><i class="icon-desktop"></i></div>
+      <div><i class="icon-laptop"></i></div>
+      <div><i class="icon-tablet"></i></div>
+      <div><i class="icon-smartphone"></i></div>
+      <div><i class="icon-cell"></i></div>
+      <div><i class="icon-battery"></i></div>
+      <div><i class="icon-highbattery"></i></div>
+      <div><i class="icon-mediumbattery"></i></div>
+      <div><i class="icon-lowbattery"></i></div>
+      <div><i class="icon-chargingbattery"></i></div>
+      <div><i class="icon-lightbulb"></i></div>
+      <div><i class="icon-washer"></i></div>
+      <div><i class="icon-downloadcloud"></i></div>
+      <div><i class="icon-download"></i></div>
+      <div><i class="icon-downloadbox"></i></div>
+      <div><i class="icon-uploadcloud"></i></div>
+      <div><i class="icon-upload"></i></div>
+      <div><i class="icon-uploadbox"></i></div>
+      <div><i class="icon-fork"></i></div>
+      <div><i class="icon-merge"></i></div>
+      <div><i class="icon-refresh"></i></div>
+      <div><i class="icon-sync"></i></div>
+      <div><i class="icon-loading"></i></div>
+      <div><i class="icon-file"></i></div>
+      <div><i class="icon-files"></i></div>
+      <div><i class="icon-addfile"></i></div>
+      <div><i class="icon-removefile"></i></div>
+      <div><i class="icon-checkfile"></i></div>
+      <div><i class="icon-deletefile"></i></div>
+      <div><i class="icon-exe"></i></div>
+      <div><i class="icon-zip"></i></div>
+      <div><i class="icon-doc"></i></div>
+      <div><i class="icon-pdf"></i></div>
+      <div><i class="icon-jpg"></i></div>
+      <div><i class="icon-png"></i></div>
+      <div><i class="icon-mpthree"></i></div>
+      <div><i class="icon-rar"></i></div>
+      <div><i class="icon-gif"></i></div>
+      <div><i class="icon-folder"></i></div>
+      <div><i class="icon-openfolder"></i></div>
+      <div><i class="icon-downloadfolder"></i></div>
+      <div><i class="icon-uploadfolder"></i></div>
+      <div><i class="icon-quote"></i></div>
+      <div><i class="icon-unquote"></i></div>
+      <div><i class="icon-print"></i></div>
+      <div><i class="icon-copier"></i></div>
+      <div><i class="icon-fax"></i></div>
+      <div><i class="icon-scanner"></i></div>
+      <div><i class="icon-printregistration"></i></div>
+      <div><i class="icon-shredder"></i></div>
+      <div><i class="icon-expand"></i></div>
+      <div><i class="icon-contract"></i></div>
+      <div><i class="icon-help"></i></div>
+      <div><i class="icon-info"></i></div>
+      <div><i class="icon-alert"></i></div>
+      <div><i class="icon-caution"></i></div>
+      <div><i class="icon-logout"></i></div>
+      <div><i class="icon-login"></i></div>
+      <div><i class="icon-scaleup"></i></div>
+      <div><i class="icon-scaledown"></i></div>
+      <div><i class="icon-plus"></i></div>
+      <div><i class="icon-hyphen"></i></div>
+      <div><i class="icon-check"></i></div>
+      <div><i class="icon-delete"></i></div>
+      <div><i class="icon-notifications"></i></div>
+      <div><i class="icon-notificationsdisabled"></i></div>
+      <div><i class="icon-clock"></i></div>
+      <div><i class="icon-stopwatch"></i></div>
+      <div><i class="icon-alarmclock"></i></div>
+      <div><i class="icon-egg"></i></div>
+      <div><i class="icon-eggs"></i></div>
+      <div><i class="icon-cheese"></i></div>
+      <div><i class="icon-chickenleg"></i></div>
+      <div><i class="icon-pizzapie"></i></div>
+      <div><i class="icon-pizza"></i></div>
+      <div><i class="icon-cheesepizza"></i></div>
+      <div><i class="icon-frenchfries"></i></div>
+      <div><i class="icon-apple"></i></div>
+      <div><i class="icon-carrot"></i></div>
+      <div><i class="icon-broccoli"></i></div>
+      <div><i class="icon-cucumber"></i></div>
+      <div><i class="icon-orange"></i></div>
+      <div><i class="icon-stove"></i></div>
+      <div><i class="icon-vent"></i></div>
+      <div><i class="icon-exhaust"></i></div>
+      <div><i class="icon-steam"></i></div>
+      <div><i class="icon-dishwasher"></i></div>
+      <div><i class="icon-toaster"></i></div>
+      <div><i class="icon-microwave"></i></div>
+      <div><i class="icon-electrickettle"></i></div>
+      <div><i class="icon-refrigerator"></i></div>
+      <div><i class="icon-freezer"></i></div>
+      <div><i class="icon-utensils"></i></div>
+      <div><i class="icon-cookingutensils"></i></div>
+      <div><i class="icon-whisk"></i></div>
+      <div><i class="icon-pizzacutter"></i></div>
+      <div><i class="icon-measuringcup"></i></div>
+      <div><i class="icon-colander"></i></div>
+      <div><i class="icon-eggtimer"></i></div>
+      <div><i class="icon-platter"></i></div>
+      <div><i class="icon-sunrise"></i></div>
+      <div><i class="icon-sunset"></i></div>
+      <div><i class="icon-sun"></i></div>
+      <div><i class="icon-cloud"></i></div>
+      <div><i class="icon-clouds"></i></div>
+      <div><i class="icon-partlycloudy"></i></div>
+      <div><i class="icon-rain"></i></div>
+      <div><i class="icon-rainheavy"></i></div>
+      <div><i class="icon-lightning"></i></div>
+      <div><i class="icon-thunderstorm"></i></div>
+      <div><i class="icon-umbrella"></i></div>
+      <div><i class="icon-rainumbrella"></i></div>
+      <div><i class="icon-rainbow"></i></div>
+      <div><i class="icon-rainbowclouds"></i></div>
+      <div><i class="icon-fog"></i></div>
+      <div><i class="icon-wind"></i></div>
+      <div><i class="icon-tornado"></i></div>
+      <div><i class="icon-fan"></i></div>
+      <div><i class="icon-bike"></i></div>
+      <div><i class="icon-wheelchair"></i></div>
+      <div><i class="icon-briefcase"></i></div>
+      <div><i class="icon-hanger"></i></div>
+      <div><i class="icon-comb"></i></div>
+      <div><i class="icon-medicalcross"></i></div>
+      <div><i class="icon-up"></i></div>
+      <div><i class="icon-down"></i></div>
+      <div><i class="icon-downleft"></i></div>
+      <div><i class="icon-left"></i></div>
+      <div><i class="icon-upleft"></i></div>
+      <div><i class="icon-navigateup"></i></div>
+      <div><i class="icon-navigatedown"></i></div>
+      <div><i class="icon-navigateleft"></i></div>
+      <div><i class="icon-retweet"></i></div>
+      <div><i class="icon-share"></i></div>
+    </div>
+    <script>
+      var icons = document.getElementById('icons').children;
+      Array.prototype.forEach.call(icons, function(icon) {
+        icon.dataset.title = icon.firstElementChild.className.slice(5);
+      });
+
+      var search = document.getElementById('search');
+      search.addEventListener('input', function(e) {
+        var value = e.target.value;
+        Array.prototype.forEach.call(icons, function(icon) {
+          if (icon.dataset.title.match(value)) {
+            icon.style.display = 'inline';
+          } else {
+            icon.style.display = 'none';
+          }
+        })
+      });
+    </script>
+  </body>
+</html>

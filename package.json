@@ -1,0 +1,28 @@
+{
+  "name": "@metalsmith/branding",
+  "version": "1.0.0",
+  "description": "A branding package for metalsmith",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "view:icons": "open-cli icons/view.html",
+    "view:images": "open-cli images/view.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metalsmith/metalsmith-logo.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "branding"
+  ],
+  "author": "Kevin Van Lierde (https://webketje.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/metalsmith/metalsmith-logo/issues"
+  },
+  "homepage": "https://github.com/metalsmith/metalsmith-logo#readme",
+  "devDependencies": {
+    "open-cli": "^7.0.1"
+  }
+}
